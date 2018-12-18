@@ -86,6 +86,14 @@ Then create a directory to save result of the script
 	cd videoavatars
 	./run_step1.sh /home/xxx/CVProj/people_snapshot_public/female-1-casual output
 Then wait for script to finish its job. This will take a long time(maybe 10 to 12 hours)
+Other two scripts are the same, but much faster.
 
+#### Step 5
+Try to make this repository more portable.  
+Use copy to replace link, copy necessary files from smpl and smplify into this repository.  
+Use
+
+	./run_step2.sh
+to test if the change is valid.  
   
   

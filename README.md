@@ -17,7 +17,7 @@ Sign up to get SMPL module and SMPLify code.
 Although they both belong to is.tue.mpg.de, I have to sign up twice and get two different account.  
 Use the password sent to mailbox to login, and download two zip file.  
 Extract them under Linux environment.(only Linux and OSX are supported)  
-The are in home/xxx/CVProj/smpl and home/xxx/CVProj/smplify_public
+They are in home/xxx/CVProj/smpl and home/xxx/CVProj/smplify_public  
 Follow the guidance of *the repo*  
 
 	cd vendor
@@ -43,7 +43,7 @@ Then change line 18 of home/xxx/CVProj/videoavartars/vendor/sphere_collisions.py
 
 #### Step 3
 Setup the environment.  
-*the repo* is written in python2, so if the python version is 3.x, python2 should be installed.
+*the repo* is written in python2, so if the python version is 3.x, python2 should be installed.  
 According to requirement.txt in *the repo*, use pip to install packages below  
 
 	opendr>=0.76
@@ -56,7 +56,7 @@ According to requirement.txt in *the repo*, use pip to install packages below
 opendr depends on the others except h5py, tqdm, chumpy. So pip will install many packages after  
 
 	pip install opendr
-Install command should be operated under root.
+Install command should be operated under root.  
 During Installation of matplotlib, an error raised 
 
 	fatal error: Python.h no such file or directory
@@ -78,14 +78,14 @@ Everything seems right.
 
 #### Step 4
 Prepare the test dataset.
-Download the dataset mentioned in *the repo*, extract them into /home/xxx/CVProj/people_snapshot_public 
+Download the dataset mentioned in *the repo*, extract them into /home/xxx/CVProj/people_snapshot_public  
 Then create a directory to save result of the script  
 
 	(current dir is /home/xxx/CVProj/)
 	mkdir output
 	cd videoavatars
 	./run_step1.sh /home/xxx/CVProj/people_snapshot_public/female-1-casual output
-Then wait for script to finish its job. This will take a long time(maybe 10 to 12 hours)
+Then wait for script to finish its job. This will take a long time(maybe 10 to 12 hours)  
 Other two scripts are the same, but much faster.
 
 #### Step 5
@@ -95,5 +95,13 @@ Use
 
 	./run_step2.sh
 to test if the change is valid.  
+
+## Team
+This is a teamwork of a 4-member team, all members are from SE-SJTU  
+Name and ID are listed below
+
+	Chen Zhiyang	516030910347
+	Zhao Ying	516030910422
+	Wang Weixi	516030910463
   
   

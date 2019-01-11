@@ -3,7 +3,7 @@
 
 import chumpy as ch
 import numpy as np
-import cPickle as pkl
+import pickle as pkl
 import scipy.sparse as sp
 from chumpy.ch import Ch
 from vendor.smpl.posemapper import posemap, Rodrigues
@@ -140,7 +140,8 @@ def joints_coco(smpl):
     eye_l = smpl[VERT_EYE_L]
     eye_r = smpl[VERT_EYE_R]
 
-    shoulders_m = ch.sum(J[[14, 13]], axis=0) / 2.
+    shoulders_m = [float(i) / 2 for i in ch.sum(J[[14, 13]], axis=0)]
+
     neck = J[12] - 0.55 * (J[12] - shoulders_m)
 
     return ch.vstack((

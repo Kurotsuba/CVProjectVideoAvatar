@@ -15,20 +15,20 @@ class FrameData(object):
 
 
 def batch_invert(x):
-    try:
-        import tensorflow as tf
-        global sess
+    # try:
+    #     import tensorflow as tf
+    #     global sess
 
-        tx = tf.convert_to_tensor(x, dtype=tf.float32)
-        txi = tf.transpose(tf.matrix_inverse(tf.transpose(tx)))
+    #     tx = tf.convert_to_tensor(x, dtype=tf.float32)
+    #     txi = tf.transpose(tf.matrix_inverse(tf.transpose(tx)))
 
-        if sess is None:
-            sess = tf.Session()
+    #     if sess is None:
+    #         sess = tf.Session()
 
-        return sess.run(txi)
+    #     return sess.run(txi)
 
-    except ImportError:
-        log.info('Could not load tensorflow. Falling back to matrix inversion with numpy (slower).')
+    # except ImportError:
+    #     log.info('Could not load tensorflow. Falling back to matrix inversion with numpy (slower).')
 
     return np.asarray([np.linalg.inv(t) for t in x.T]).T
 

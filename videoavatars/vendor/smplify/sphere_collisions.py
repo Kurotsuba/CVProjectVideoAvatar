@@ -13,7 +13,7 @@ import numpy as np
 import chumpy as ch
 from vendor.smpl.lbs import verts_core
 
-from capsule_body import get_capsules, set_sphere_centers,\
+from .capsule_body import get_capsules, set_sphere_centers,\
     get_sphere_bweights, collisions,\
     capsule_dist
 

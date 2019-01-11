@@ -14,7 +14,7 @@ import numpy as np
 import chumpy as ch
 import scipy.sparse as sp
 
-from capsule_ch import Capsule
+from .capsule_ch import Capsule
 
 joint2name = ['pelvis', 'leftThigh', 'rightThigh', 'spine', 'leftCalf',
               'rightCalf', 'spine1', 'leftFoot', 'rightFoot', 'spine2', 'neck',

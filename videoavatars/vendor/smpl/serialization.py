@@ -23,11 +23,11 @@ Modules included:
 __all__ = ['load_model', 'save_model']
 
 import numpy as np
-import cPickle as pickle
+import pickle
 import chumpy as ch
 from chumpy.ch import MatVecMult
-from posemapper import posemap
-from verts import verts_core
+from .posemapper import posemap
+from .verts import verts_core
     
 def save_model(model, fname):
     m0 = model

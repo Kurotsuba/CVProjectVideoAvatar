@@ -1,6 +1,18 @@
 # CVProjectVideoAvatar
 Project of SJTU SE 2018 fall Computer Vision course. Based on thmoa/videoavatars.
 
+
+## Quick Start
+For quick start, A docker image has been made and upload to docker hub.  
+Everyone can use simple command to run this project without bordering environment configuration.  
+
+	(Under Linux or OSX system)
+	sudo docker pull kurotsuba/vaenv:latest
+	git clone https://github.com/Kurotsuba/CVProjectVideoAvatar.git CVProj
+	sudo docker run -it --privileged --cap-add=ALL -v /home/<your username>/CVProj:/home/test kurotsuba/vaenv:latest /bin/bash
+	cd /home/test
+Then you can run things like ./run_step1.sh directly.  
+
 ## Setup
 Follow the guidance of [videoavatars](https://github.com/thmoa/videoavatars) almost step-by-step.  
 PS: The videoavatars repository will be mentioned as *the repo*  
@@ -103,5 +115,6 @@ Name and ID are listed below
 	Chen Zhiyang	516030910347
 	Zhao Ying	516030910422
 	Wang Weixi	516030910463
+	Lin Yixuan	515030910302
   
   
